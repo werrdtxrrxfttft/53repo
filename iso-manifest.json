@@ -1,0 +1,32 @@
+{
+  "name": "Aster Linux",
+  "version": "0.1.0",
+  "architecture": "x86_64",
+  "boot": [
+    "El Torito legacy BIOS",
+    "El Torito x86-64 UEFI (Secure Boot disabled)"
+  ],
+  "console": [
+    "local text console (tty1)",
+    "COM1 serial (ttyS0, 115200 baud)"
+  ],
+  "kernel_packages": [
+    "linux-image-6.12.111+deb13-amd64=6.12.111-1",
+    "busybox-static=1:1.37.0-6+b9"
+  ],
+  "iso_tool_packages": [
+    "grub-common=2.12-9+deb13u2",
+    "grub-pc-bin=2.12-9+deb13u2",
+    "grub-efi-amd64-bin=2.12-9+deb13u2",
+    "grub-efi-amd64-unsigned=2.12-9+deb13u2",
+    "xorriso=1.5.6-1.2+b1",
+    "mtools=4.0.48-1"
+  ],
+  "input_sha256": {
+    "vmlinuz": "6d8a7f745280cc06a6d2877c932f4dfa9079b694eb4227b61b27232642340794",
+    "initramfs.cpio.gz": "af77233d98d0955b6a3d6a9bec528677a23df2d866df97535ced2db653a82602"
+  },
+  "sha256": {
+    "aster-linux.iso": "97f0c1d62b32d8c642de8649f86d5b6b207101b8c6aaa5a11807411a2c461b84"
+  }
+}
