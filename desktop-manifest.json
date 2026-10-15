@@ -1,10 +1,10 @@
 {
   "name": "Aster Linux XFCE",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "architecture": "x86_64",
   "base": "Debian 13 (trixie)",
   "desktop": "XFCE",
-  "container_image": "aster-desktop:0.2",
+  "container_image": "aster-desktop:0.2.1",
   "boot": [
     "El Torito legacy BIOS",
     "El Torito x86-64 UEFI (Secure Boot disabled)"
@@ -559,6 +559,7 @@
     "xserver-xorg-core=2:21.1.16-1.3+deb13u4",
     "xserver-xorg-input-libinput=1.5.0-1",
     "xserver-xorg-video-fbdev=1:0.5.0-2",
+    "xserver-xorg-video-vesa=1:2.6.0-2",
     "xserver-xorg-video-vmware=1:13.4.0-1",
     "xterm=398-1",
     "zlib1g:amd64=1:1.3.dfsg+really1.3.1-1+b1"
@@ -573,11 +574,11 @@
   ],
   "input_sha256": {
     "vmlinuz": "6d8a7f745280cc06a6d2877c932f4dfa9079b694eb4227b61b27232642340794",
-    "initrd.img": "8c28b27887b35f8f11a93699a6c50834b63d04eef3294db46995eba84aeed7d6",
-    "filesystem.squashfs": "5476c8d8c0277553346d35c1ca788e648543598c03a0992869fb62c6bd4609cf",
-    "packages.txt": "df32b1afe5a28492c5dddfca570b92c95a4c31d653660c0b49f6e0aea6bb5c7c"
+    "initrd.img": "22f78157ac4db9b6e87c279dcbd93309012650a37f57686403c3566c3f0ed7eb",
+    "filesystem.squashfs": "d2e870c4da71230a54f016c61c14dfbb28683849ef6639b0c903a5b7088a75dd",
+    "packages.txt": "5a9a3d69b33b6cc590c7fde1fcbde73ac2fbbb972b1bc72843244ecbe70f48b8"
   },
   "sha256": {
-    "aster-linux-xfce.iso": "f45f11e25307aea96e53ea968d8d1df6ad5bb495e340edab8b20215c13b09a55"
+    "aster-linux-xfce.iso": "9ecf8599bdda52d0664ca91653f45a42acdf7982b0f3eff722646b496b39a7e9"
   }
 }

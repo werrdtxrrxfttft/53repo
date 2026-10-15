@@ -1,5 +1,5 @@
 <!-- ASTER_XFCE_DOWNLOAD_BEGIN -->
-# Aster Linux XFCE desktop
+# Aster Linux 0.2.1 XFCE desktop
 
 [Download aster-linux-xfce.iso](https://github.com/werrdtxrrxfttft/53repo/raw/refs/heads/aster-iso-download/aster-linux-xfce.iso) ·
 [SHA-256 checksum](https://github.com/werrdtxrrxfttft/53repo/raw/refs/heads/aster-iso-download/aster-linux-xfce.iso.sha256) ·
@@ -11,12 +11,23 @@ the password is **aster**. Open Terminal to run `sudo apt update` or install
 packages with `sudo apt install PACKAGE`.
 
 For VirtualBox, choose Linux / Debian (64-bit), **2 GB RAM**, **2 CPUs**,
-**VMSVGA** graphics, **128 MB video memory**, and **3D acceleration off**.
-Attach the ISO as the virtual optical disk and boot it. BIOS and x86-64 UEFI
-are supported; disable Secure Boot when using UEFI. NAT provides networking.
-If the desktop stays black, select **Aster Linux 0.2 - XFCE desktop (safe
-graphics)** in the boot menu. Press an arrow key during the two-second menu
-countdown to keep the menu open while choosing the entry.
+**128 MB video memory**, and **3D acceleration off**. Attach the ISO as the
+virtual optical disk. NAT provides networking.
+
+For a black desktop screen, power off the VM, **disable EFI**, and select
+**VBoxSVGA** or **VMSVGA** graphics. Boot the ISO and choose **Aster Linux
+0.2.1 - XFCE desktop (legacy graphics, BIOS only)**. This adds a VESA graphics
+path for BIOS boot; its behavior still needs confirmation in VirtualBox.
+The **native graphics** and **safe graphics** menu entries remain available.
+Those entries support BIOS or x86-64 UEFI; disable Secure Boot when using UEFI.
+
+The boot menu waits **10 seconds**. Press an arrow key to keep it open while
+choosing an entry. Boot now displays loading messages and local system startup
+progress instead of hiding it with `quiet`.
+
+If graphics still fail, choose **Aster Linux 0.2.1 - text recovery and
+diagnostics**. The local console logs in automatically as **aster**. Run
+`aster diagnose` to collect graphics, display-manager, and boot diagnostics.
 
 This is a live desktop with no disk installer. Files, settings, and packages
 installed in the running VM reset after shutdown.
@@ -37,4 +48,3 @@ and `poweroff` to shut down.
 
 Use `sha256sum -c aster-linux.iso.sha256` to verify the download.
 Package versions and hashes are recorded in `iso-manifest.json`.
-
